@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Установка русского языка -->
+<html lang="ru">
+
+
+<head>
+
+	<!-- Определяет кодировку символов в UTF-8 -->
+	<meta charset="UTF-8">
+
+	<!-- Адаптивный веб-дизайна -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- НЕ адаптивный веб-дизайна -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">> -->
+
+	<!-- Заголовок документа на вкладке браузера -->
+	<title>Pattern</title>
+
+	<!-- Иконки документа - Favicon https://favicon.io https://realfavicongenerator.net -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+	<link rel="manifest" href="./icons/site.webmanifest">
+	<link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- SEO -->
+	<!-- Описание страницы -->
+	<meta name="description" content="Test web page">
+	<!-- Ключевые слова  -->
+	<meta name="keywords" content="html, css, sass, scss, webdev">
+	<!-- Имя автора -->
+	<meta name="author" content="igroman4ik">
+
+	<!-- Использовать последнюю версию IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<!-- Google шрифты -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="preload" as="style" href="#" />
+	<link rel="stylesheet" href="#" media="print" onload="this.media='all'" />
+
+	<!-- Локальные шрифты -->
+	<link rel="preload" href="./fonts/Nunito-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="./fonts/style.css" media="print" onload="this.media='all'" />
+
+	<!-- Внешние стили -->
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.min.css">
+
+
+
+</head>
+
+
+<body>
+
+	<!--  Header  -->
+	<header class="header">
+		<div class="container">
+			<h1 class="title">Калькулятор</h1>
+		</div>
+	</header>
+
+	<!--  Main  -->
+	<main class="main">
+		<section class="calculator">
+			<div class="container">
+				<div class="wrapper">
+					<input placeholder="Первое число" value="415" id="num1" type="number">
+					<select name="">
+						<option value="+">Плюс</option>
+						<option value="-">Минус</option>
+						<option value="*">Умножить</option>
+						<option value="/">Делить</option>
+					</select>
+					<input placeholder="Второе число" value="15" id="num2" type="number">
+					<button id="calculate" class="btn">Посчитать</button>
+					<div class="block-result">
+						<h2 class="result-title">Ваш результат:</h2>
+						<p id="result" class="result">0</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!--  Footer  -->
+	<footer class="footer">
+		<div class="container">
+
+		</div>
+	</footer>
+
+
+	<!-- External scripts files -->
+	<script src="./js/main.js"></script>
+
+</body>
+
+
+</html>
