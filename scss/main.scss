@@ -1,0 +1,131 @@
+body {
+    background-color: #272727;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+}
+
+.calc {
+    margin: 0 auto;
+    background-color: #17171C;
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 16px 20px 32px 20px;
+
+    .sun {
+        position: absolute;
+        display: none;
+        top: 19.5px;
+        left: 100px;
+    }
+
+    .moon {
+        position: absolute;
+        top: 19.5px;
+        left: 192px;
+    }
+}
+
+.switch {
+    width: 72px;
+    height: 32px;
+    display: flex;
+    border-radius: 16px;
+    background: #2E2F38;
+    position: relative;
+
+    .circle {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-color: #4E505F;
+        top: 4px;
+        left: 4px;
+        border-radius: 50%;
+    }
+
+
+}
+
+
+
+
+.screen {
+    margin-top: 55px;
+    align-self: flex-end;
+
+    .last-math {
+        text-align: right;
+        font-size: 40px;
+        opacity: 0.4;
+    }
+
+    .math {
+        text-align: right;
+        margin-top: 16px;
+        font-size: 96px;
+        font-weight: 300;
+        line-height: 96px;
+    }
+}
+
+.buttons {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 72px);
+    grid-template-rows: repeat(5, 72px);
+    gap: 16px;
+
+    button {
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #2E2F38;
+        color: inherit;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #292a33;
+        }
+
+        &:active {
+            background-color: #565867;
+        }
+    }
+
+    #clear,
+    #plus-minus,
+    #procent {
+        background-color: #4E505F;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #3d3e4a;
+        }
+
+        &:active {
+            background-color: #66676e;
+        }
+    }
+
+    #division,
+    #multiply,
+    #minus,
+    #plus,
+    #equals {
+        background: #4B5EFC;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #4453de;
+        }
+
+        &:active {
+            background-color: #606ff7;
+        }
+    }
+}

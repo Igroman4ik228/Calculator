@@ -1,9 +1,19 @@
 @font-face {
-    font-family: 'Nunito';
+    font-family: 'Work Sans';
     font-display: block;
-    src: local('Nunito Regular'), local('Nunito-Regular'),
-        url('Nunito-Regular.woff2') format('woff2'),
-        url('Nunito-Regular.woff') format('woff');
+    src: local('Work Sans Regular'), local('Work-Sans-Regular'),
+        url('WorkSans-Regular.woff2') format('woff2'),
+        url('WorkSans-Regular.woff') format('woff');
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    font-display: block;
+    src: local('Work Sans Light'), local('Work-Sans-Light'),
+        url('WorkSans-Light.woff2') format('woff2'),
+        url('WorkSans-Light.woff') format('woff');
+    font-weight: 300;
     font-style: normal;
 }
